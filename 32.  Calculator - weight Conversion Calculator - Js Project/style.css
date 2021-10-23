@@ -1,0 +1,34 @@
+body {
+  background-image: url("pexels-ketut-subiyanto-4474052.jpg");
+  font-size: 25px;
+  font-weight: 800;
+}
+h1 {
+  margin-bottom: 50px;
+}
+form {
+  min-height: 500px;
+  padding: 25px;
+  color: aliceblue;
+  /*aligninig the container to center of browser window*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /**************glass morphism**************/
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  border-top: 1px rgba(255, 255, 255, 0.02);
+  border-left: 1px rgba(255, 255, 255, 0.02);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+#result,
+input {
+  float: right;
+  margin-right: 120px;
+  padding: 5px;
+}

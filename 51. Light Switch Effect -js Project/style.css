@@ -1,0 +1,33 @@
+.body-bcg {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.bulb-off {
+  width: 800px;
+  height: 500px;
+  background: url("bulb-off.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bulb-on {
+  width: 800px;
+  height: 500px;
+  background: url("bulb-on.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

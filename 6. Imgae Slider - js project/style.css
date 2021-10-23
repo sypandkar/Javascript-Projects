@@ -1,0 +1,50 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.images {
+  background: yellow;
+  min-height: 70vh;
+  flex: 0 0 80%;
+  /* this flex width will be according to body or html */
+  background: url("/img-0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 5px 7px black;
+}
+button {
+  font: bold;
+  font-size: 50px;
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+#left-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  /* 1st -50% is left & 2nd -50% is top*/
+}
+#right-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  /*1st 50% is right & 2nd 50% is top*/
+}

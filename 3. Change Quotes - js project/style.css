@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.container {
+  margin: 10% 10%;
+  padding: 5px 5px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+button {
+  padding: 10px 15px;
+  font-weight: bold;
+  color: brown;
+  background: transparent;
+  border: 3px solid orange;
+}
+button:hover {
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+}
+h4 {
+  color: white;
+  text-transform: capitalize;
+}

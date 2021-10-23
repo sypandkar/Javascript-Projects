@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <input type="text" id="inp" />
+  <button id="btn">button</button>
+
+  <body>
+    <script>
+      let addin = document.getElementById("inp");
+      let addbtn = document.getElementById("btn");
+      addbtn.addEventListener("click", function () {
+        addinval = addin.value;
+        let bmw = localStorage.getItem("local");
+        if (bmw == null) {
+          arr = [];
+        } else {
+          arr = JSON.parse(bmw);
+        }
+        arr.push(addinval);
+        localStorage.setItem("local", JSON.stringify(arr));
+      });
+    </script>
+  </body>
+</html>

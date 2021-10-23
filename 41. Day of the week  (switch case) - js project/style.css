@@ -1,0 +1,24 @@
+body {
+  min-height: 100vh;
+  text-align: center;
+}
+#container {
+  height: 60vh;
+  width: 40vw;
+  background-color: skyblue;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#weekday {
+  font-size: 110px;
+  text-transform: uppercase;
+  color: orangered;
+}
+#phrase {
+  color: blue;
+  font-size: 20px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height Conversion Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video
+      src="https://video-previews.elements.envatousercontent.com/files/ded8e131-69bc-4712-9516-9098748e3853/video_preview_h264.mp4"
+      autoplay
+      loop
+      muted
+      id="video-background"
+    ></video>
+    <form action="" id="calculator">
+      <h1>Heigh Converter</h1>
+      <div class="row">
+        <label for="feet">Feet:</label><input id="feet" type="number" />
+      </div>
+      <div class="row">
+        <label for="inches">Inches:</label>
+        <input id="inches" type="number" />
+      </div>
+      <div class="row">
+        <input id="button" type="submit" value="convert to cm" />
+      </div>
+      <div id="results"></div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

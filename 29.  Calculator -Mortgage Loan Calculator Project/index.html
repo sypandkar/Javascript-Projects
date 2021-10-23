@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LOAN CALCULATOR</h1>
+      <p class="para">
+        <label for="loan-amount">LOAN AMOUNT: Rs</label
+        ><span
+          ><input
+            type="number"
+            id="loan-amount"
+            name=""
+            onchange="computeloan()"
+            min="1"
+            max="5000000"
+        /></span>
+      </p>
+      <p class="para">
+        <label for="interest-rate">INTEREST RATE: %</label>
+        <span>
+          <input
+            type="number"
+            id="interest-rate"
+            name=""
+            value="10"
+            step=".1"
+            onchange="computeloan()"
+        /></span>
+      </p>
+      <p class="para">
+        <label for="months-to-pay"> MONTHS TO PAY:</label>
+        <span
+          ><input
+            type="number"
+            id="months-to-pay"
+            name=""
+            value="1"
+            step="1"
+            onchange="computeloan()"
+        /></span>
+      </p>
+      <br /><br /><br />
+      <h3 id="payment"></h3>
+      <br />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  text-align: center;
+  color: black;
+  text-shadow: grey 2px 2px 1px;
+  background: url("/photo.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+#firstname {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 300px;
+}
+#lastname {
+  margin-top: 20px;
+  margin-left: 102px;
+  width: 300px;
+}
+#email {
+  margin-top: 20px;
+  margin-left: 132px;
+  width: 300px;
+}
+#address {
+  margin-top: 20px;
+  margin-left: 118px;
+  width: 300px;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  border-top: 1px rgba(255, 255, 255, 0.02);
+  border-left: 1px rgba(255, 255, 255, 0.02);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+fieldset {
+  width: fit-content;
+  text-align: center;
+  border-radius: 14px 5px;
+  margin: 20px;
+}
+textarea {
+  border-radius: 15px 5px;
+}
+#send {
+  margin: 20px 0 20px 0;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px 5px;
+}
+#send:hover {
+  color: white;
+  background-color: black;
+}
+#reset {
+  margin: 20px 0 20px 0;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px 5px;
+}
+#reset:hover {
+  color: white;
+  background-color: black;
+}

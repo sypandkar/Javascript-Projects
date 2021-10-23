@@ -1,0 +1,107 @@
+body {
+  background-color: #091921;
+  font-family: "Gemunu Libre", sans-serif;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.container {
+  min-height: 75vh;
+  width: 25vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  grid-template-columns: auto 25% 25% 25%;
+  grid-template-rows: auto 14% 14% 14% 14% 14%;
+
+  grid-template-areas:
+    "display display display display"
+    "cancel cancel devide multiply"
+    "seven eight nine subtract"
+    "four five six addition"
+    "one two three addition"
+    "zero double-zero dot equal-to";
+}
+.calculator {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  border-top: 1px rgba(255, 255, 255, 0.02);
+  border-left: 1px rgba(255, 255, 255, 0.02);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  /* color: white; */
+  text-align: center;
+  font-size: 25px;
+  padding-top: 25px;
+  font-weight: bolder;
+}
+#display {
+  grid-area: display;
+}
+#cancel {
+  grid-area: cancel;
+}
+#devide {
+  grid-area: devide;
+}
+#multiply {
+  grid-area: multiply;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#subtract {
+  grid-area: subtract;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#addition {
+  grid-area: addition;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#zero {
+  grid-area: zero;
+}
+#double-zero {
+  grid-area: double-zero;
+}
+#dot {
+  grid-area: dot;
+}
+#equal-to {
+  grid-area: equal-to;
+}
